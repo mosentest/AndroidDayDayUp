@@ -1,0 +1,103 @@
+素材网站
+https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=14953
+
+drawable-xxhdpi
+不同尺寸比例，比如我手机nexus5x
+
+drawable 自定xml 点击 长按 焦点 效果
+
+layout 放页面布局
+
+mipmap-XXX 主要放矢量图，主要放lunacher （桌面） icon
+
+
+values 目录下
+
+colors.xml 放颜色值
+
+<color name="color_D81B60">#D81B60</color>
+
+strings.xml 国际化开发 所有文字 都要存储这里，默认语言
+
+styles.xml 主题样式
+
+--------------------------------------------------------------------------------------------
+
+BroadcastReceiver
+
+监听网络变化 需要的权限（https://www.cnblogs.com/dazuihou/p/3650572.html）
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+IntentFilter intentFilter = new IntentFilter();
+intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
+registerReceiver(myNetReceiver, intentFilter);
+
+
+----------------------------------------------------------------------------------------------------------
+
+findViewById插件
+
+AndroidStudio->Preferences->Plugin->MarketPlace->点击搜索款搜索自己的插件，可以在百度了解下其他的插件
+
+
+----------------------------------------------------------------------------------------------------
+
+状态选择器
+
+wx_selector.xml
+
+drawable 自定xml 点击 长按 焦点 效果
+
+
+---------------------------------------------------------------------------------------------------
+
+android:layout_margin="10dp" 外边距
+android:paddingLeft="10dp" 内外距
+
+---------------------------------------------------------------------------------------------------
+
+LinearLayout 权重占比
+
+android:layout_weight="1"
+
+----------------------------------------------------------------------------------------------------
+
+RecyclerView
+
+item 
+
+ViewHolder的作用与用法(自行了解 listview优化，为什么要写viewHolder)
+//https://blog.csdn.net/qq_39402590/article/details/90473268
+
+
+要实现一个item的layout文件，编写每个item的页面
+
+实现RecyclerView的RecyclerView.Adapter和RecyclerView.ViewHolder类，
+
+实现RecyclerView.Adapter的onCreateViewHolder并解析layout文件和处理点击
+
+实现onBindViewHolder方法，用于Holder绑定页面数据
+
+
+
+        mWxRX.setAdapter(wxAdapter);
+
+        /**
+         * 必须要设置，不设置，是没办法展示的
+         */
+//        mWxRX.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.HORIZONTAL, false));
+        /**
+         * 网格布局
+         */
+        mWxRX.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+
+
+给rv关联adapter 并设置layoutmanager ，layoutmanger是必须要set的一个方法，否则是不展示出来
+
+
+----
+
+读取联系人权限 
+
+<uses-permission android:name="android.permission.READ_CONTACTS"/>

@@ -42,16 +42,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="微信"
+                android:textColor="@drawable/wx_33333_press_99999"
                 android:textSize="18sp" />
         </LinearLayout>
 
 
         <LinearLayout
+
+            android:id="@+id/ll_txl"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivtxl"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/wx_selector" />
 
             <TextView
                 android:id="@+id/txl"
@@ -59,17 +68,27 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="通讯录"
+                android:textColor="@drawable/wx_33333_press_99999"
                 android:textSize="18sp" />
 
         </LinearLayout>
 
 
         <LinearLayout
+
+            android:id="@+id/ll_fx"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/ivfx"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/wx_selector" />
 
             <TextView
                 android:id="@+id/fx"
@@ -77,23 +96,31 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="发现"
+                android:textColor="@drawable/wx_33333_press_99999"
                 android:textSize="18sp" />
         </LinearLayout>
 
 
         <LinearLayout
+            android:id="@+id/ll_me"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/ivme"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/wx_selector" />
 
             <TextView
                 android:id="@+id/me"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="我"
+                android:textColor="@drawable/wx_33333_press_99999"
                 android:textSize="18sp" />
         </LinearLayout>
 

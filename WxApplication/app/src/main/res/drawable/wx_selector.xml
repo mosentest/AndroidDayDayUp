@@ -3,7 +3,5 @@
 
 
     <item android:drawable="@drawable/icon_addmessage_2" android:state_selected="true" />
-    <item android:drawable="@drawable/icon_addmessage_2" android:state_pressed="true" />
-    <item android:drawable="@drawable/icon_addmessage_2" android:state_checkable="true" />
     <item android:drawable="@drawable/icon_addmessage" />
 </selector>
